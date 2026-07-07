@@ -26,88 +26,88 @@ tasks:
   - action: download_github
     src: https://github.com/citizenfx/cfx-server-data
     ref: master
-    dest: ./tmp/cfx
+    dest: ./resources/cfx
   - action: move_path
-    src: ./tmp/cfx/resources
+    src: ./resources/cfx/resources
     dest: ./resources
 
   # ── Hirogi Games framework ──
   - action: download_github
     src: https://github.com/xxxjahlilallenxxx/hirogi-games-core-fivem
     ref: master
-    dest: ./tmp/hirogi
+    dest: ./resources/hirogi
   - action: ensure_dir
     path: ./resources/[hirogi]
   - action: move_path
-    src: ./tmp/hirogi/hg-lib
+    src: ./resources/hirogi/hg-lib
     dest: ./resources/[hirogi]/hg-lib
   - action: move_path
-    src: ./tmp/hirogi/hgpostgresql
+    src: ./resources/hirogi/hgpostgresql
     dest: ./resources/[hirogi]/hgpostgresql
   - action: move_path
-    src: ./tmp/hirogi/hg-framework-core
+    src: ./resources/hirogi/hg-framework-core
     dest: ./resources/[hirogi]/hg-framework-core
   - action: move_path
-    src: ./tmp/hirogi/hg-inventory
+    src: ./resources/hirogi/hg-inventory
     dest: ./resources/[hirogi]/hg-inventory
   - action: move_path
-    src: ./tmp/hirogi/hg-weathersync
+    src: ./resources/hirogi/hg-weathersync
     dest: ./resources/[hirogi]/hg-weathersync
   - action: move_path
-    src: ./tmp/hirogi/hg-doorlock
+    src: ./resources/hirogi/hg-doorlock
     dest: ./resources/[hirogi]/hg-doorlock
   - action: move_path
-    src: ./tmp/hirogi/hg-recyclejob
+    src: ./resources/hirogi/hg-recyclejob
     dest: ./resources/[hirogi]/hg-recyclejob
   - action: move_path
-    src: ./tmp/hirogi/hg-scrapyard
+    src: ./resources/hirogi/hg-scrapyard
     dest: ./resources/[hirogi]/hg-scrapyard
   - action: move_path
-    src: ./tmp/hirogi/hg-weed
+    src: ./resources/hirogi/hg-weed
     dest: ./resources/[hirogi]/hg-weed
   - action: move_path
-    src: ./tmp/hirogi/bob74_ipl
+    src: ./resources/hirogi/bob74_ipl
     dest: ./resources/[hirogi]/bob74_ipl
   - action: move_path
-    src: ./tmp/hirogi/breze_benefactor
+    src: ./resources/hirogi/breze_benefactor
     dest: ./resources/[hirogi]/breze_benefactor
   - action: move_path
-    src: ./tmp/hirogi/connectqueue
+    src: ./resources/hirogi/connectqueue
     dest: ./resources/[hirogi]/connectqueue
   - action: move_path
-    src: ./tmp/hirogi/dealer_map
+    src: ./resources/hirogi/dealer_map
     dest: ./resources/[hirogi]/dealer_map
   - action: move_path
-    src: ./tmp/hirogi/fivem-vstancer
+    src: ./resources/hirogi/fivem-vstancer
     dest: ./resources/[hirogi]/fivem-vstancer
   # menuv must contain the built MenuV release (committed to the repo like
   # hgpostgresql's dist/) — hg-adminmenu consumes it via @menuv/menuv.lua.
   - action: move_path
-    src: ./tmp/hirogi/menuv
+    src: ./resources/hirogi/menuv
     dest: ./resources/[hirogi]/menuv
   - action: move_path
-    src: ./tmp/hirogi/hg-adminmenu
+    src: ./resources/hirogi/hg-adminmenu
     dest: ./resources/[hirogi]/hg-adminmenu
   - action: move_path
-    src: ./tmp/hirogi/hg-ambulancejob
+    src: ./resources/hirogi/hg-ambulancejob
     dest: ./resources/[hirogi]/hg-ambulancejob
   - action: move_path
-    src: ./tmp/hirogi/hg-doctor
+    src: ./resources/hirogi/hg-doctor
     dest: ./resources/[hirogi]/hg-doctor
   - action: move_path
-    src: ./tmp/hirogi/hg-military
+    src: ./resources/hirogi/hg-military
     dest: ./resources/[hirogi]/hg-military
   - action: move_path
-    src: ./tmp/hirogi/hg-weapons
+    src: ./resources/hirogi/hg-weapons
     dest: ./resources/[hirogi]/hg-weapons
   - action: move_path
-    src: ./tmp/hirogi/hg-apartments
+    src: ./resources/hirogi/hg-apartments
     dest: ./resources/[hirogi]/hg-apartments
   - action: move_path
-    src: ./tmp/hirogi/hg-multicharacter
+    src: ./resources/hirogi/hg-multicharacter
     dest: ./resources/[hirogi]/hg-multicharacter
   - action: move_path
-    src: ./tmp/hirogi/hg-spawn
+    src: ./resources/hirogi/hg-spawn
     dest: ./resources/[hirogi]/hg-spawn
   - action: remove_path
     path: ./tmp
