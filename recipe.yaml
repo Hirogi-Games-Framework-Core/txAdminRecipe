@@ -100,6 +100,15 @@ tasks:
   - action: move_path
     src: ./tmp/hirogi/hg-weapons
     dest: ./resources/[hirogi]/hg-weapons
+  - action: move_path
+    src: ./tmp/hirogi/hg-apartments
+    dest: ./resources/[hirogi]/hg-apartments
+  - action: move_path
+    src: ./tmp/hirogi/hg-multicharacter
+    dest: ./resources/[hirogi]/hg-multicharacter
+  - action: move_path
+    src: ./tmp/hirogi/hg-spawn
+    dest: ./resources/[hirogi]/hg-spawn
   - action: remove_path
     path: ./tmp
 
@@ -149,8 +158,11 @@ tasks:
       ensure hg-lib
       ensure hgpostgresql
       ensure hg-framework-core
+      ensure hg-multicharacter
+      ensure hg-spawn
       ensure hg-inventory
       ensure hg-weapons
+      ensure hg-apartments
       ensure hg-weathersync
       ensure hg-doorlock
       ensure hg-ambulancejob
